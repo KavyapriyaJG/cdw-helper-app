@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd26e768-fecd-433b-83d8-fa745602e4e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Helper Application.postman_collection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/HelperApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/artifacts/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/configs/AOPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/constants/CommonConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/constants/HelperAppConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/constants/QueryConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/controllers/HelperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/controllers/ResidentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/AppointmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/AvailableHelpersDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/FailureResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/SuccessResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/UserLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/UserRegistrationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/dto/UserUpdationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/HelperDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/ResidentDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/RoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/entities/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/exceptions/HelperAppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/handlers/AccessExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/handlers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/mappers/AppointmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/mappers/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/repositories/AppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/repositories/HelperDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/security/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/adminservices/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/adminservices/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/authservices/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/authservices/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/helperservices/HelperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/helperservices/HelperServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/residentservices/ResidentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/services/residentservices/ResidentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/utilities/CommonUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/utilities/DateUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/utilities/ExceptionUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/utilities/JwtUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cdw/helper/utilities/LogUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/errorCodes.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/controllers/AdminControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/controllers/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/controllers/HelperControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/controllers/ResidentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/services/adminservices/AdminServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/services/authservices/AuthServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/services/helperservices/HelperServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/services/residentservices/ResidentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/utilities/CommonUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/utilities/DateUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/utilities/ExceptionUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/utilities/JwtUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cdw/helper/utilities/LogUtilityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2qkb06kQOpeWj8slkaJAIQjfAaW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Kavyapriya/Desktop/Git/cdw-helper-app&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cdw.helper.entities" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cdw.helper.exceptions" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HelperApp">
+    <configuration name="HelperApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cdw.helper.HelperApp" />
+      <module name="cdw-helper-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdw.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtUtilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cdw-helper-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdw.helper.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdw.helper.utilities" />
+      <option name="MAIN_CLASS_NAME" value="cdw.helper.utilities.JwtUtilityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResidentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cdw-helper-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdw.helper.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdw.helper.controllers" />
+      <option name="MAIN_CLASS_NAME" value="cdw.helper.controllers.ResidentControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResidentServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cdw-helper-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdw.helper.services.residentservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdw.helper.services.residentservices" />
+      <option name="MAIN_CLASS_NAME" value="cdw.helper.services.residentservices.ResidentServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cdw.helper in cdw-helper-app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cdw-helper-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cdw.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cdw.helper" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelperApp" />
+        <item itemvalue="JUnit.cdw.helper in cdw-helper-app" />
+        <item itemvalue="JUnit.ResidentServiceImplTest" />
+        <item itemvalue="JUnit.ResidentControllerTest" />
+        <item itemvalue="JUnit.JwtUtilityTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd26e768-fecd-433b-83d8-fa745602e4e8" name="Changes" comment="" />
+      <created>1735209293530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735209293530</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/handlers/AccessExceptionHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/handlers/GlobalExceptionHandler.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/mappers/UserMapper.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/services/authservices/AuthServiceImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/mappers/AppointmentMapper.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/controllers/ResidentController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cdw/helper/services/residentservices/ResidentServiceImplTest.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cdw/helper/services/authservices/AuthServiceImplTest.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cdw/helper/services/authservices/AuthServiceImplTest.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cdw/helper/utilities/JwtUtility.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cdw_helper_app$cdw_helper_in_cdw_helper_app.ic" NAME="cdw.helper in cdw-helper-app Coverage Results" MODIFIED="1735512536982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cdw.helper.*</FILTER>
+    </SUITE>
+  </component>
+</project>
