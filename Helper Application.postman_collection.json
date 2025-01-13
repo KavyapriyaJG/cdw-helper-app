@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "8a214168-cba3-4bef-b631-998c5ca75d6b",
+		"name": "Helper Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26574483",
+		"_collection_link": "https://mission-leo.postman.co/workspace/Mission-Leo~e164db23-e29a-4904-acf7-5ff9c0fb744b/collection/26574483-8a214168-cba3-4bef-b631-998c5ca75d6b?action=share&source=collection_link&creator=26574483"
+	},
+	"item": [
+		{
+			"name": "register helper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"h6\",\n    \"lastName\" : \"k\",\n    \"dob\" : \"2002-09-11\",\n    \"emailAddress\": \"h6@mail.com\",\n    \"gender\" : \"Male\",\n    \"password\": \"kind\",\n\n    \"specialization\" : \"mechanic\",\n    \"rating\" : 4.0,\n    \"hourlyRate\" : 4.0\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register/helper",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register",
+						"helper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register resident",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Kavya\",\n    \"lastName\" : \"k\",\n    \"dob\" : \"2002-09-11\",\n    \"emailAddress\": \"kavya@mail.com\",\n    \"gender\" : \"Female\",\n    \"password\": \"kind\",\n    \"role\" : \"RESIDENT\",\n    \"apartmentNumber\" : \"A-120\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register/resident",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register",
+						"resident"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Subha\",\n    \"lastName\" : \"k\",\n    \"dob\" : \"2002-09-11\",\n    \"emailAddress\": \"subha@mail.com\",\n    \"gender\" : \"Male\",\n    \"password\": \"kind\",\n    \"role\" : \"ADMIN\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"emailAddress\" : \"kavya@mail.com\",\n    \"password\" : \"kind\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0xLCBuYW1lPVJPTEVfQURNSU4pIiwic3ViIjoic3ViaGFAbWFpbC5jb20iLCJpYXQiOjE3MzUzMzEyMTQsImV4cCI6MTczNTM0MjAxNH0.L5K_eC4_ynXZK8jpPE0_1CuFaUSUcDg_yW9LlFle5ns",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN - list users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0xLCBuYW1lPVJPTEVfQURNSU4pIiwic3ViIjoic3ViaGFAbWFpbC5jb20iLCJpYXQiOjE3MzU0ODY2NjMsImV4cCI6MTczNTQ5NzQ2M30.Uv_A47INuzamV5zJwuchUyUFN7T1ra4UWMvVHgfhUk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN - user approval",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0xLCBuYW1lPVJPTEVfQURNSU4pIiwic3ViIjoic3ViaGFAbWFpbC5jb20iLCJpYXQiOjE3MzU0ODY2NjMsImV4cCI6MTczNTQ5NzQ2M30.Uv_A47INuzamV5zJwuchUyUFN7T1ra4UWMvVHgfhUk8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/users/3/approval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"users",
+						"3",
+						"approval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN - update user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0xLCBuYW1lPVJPTEVfQURNSU4pIiwic3ViIjoic3ViaGFAbWFpbC5jb20iLCJpYXQiOjE3MzUzMzM0MDAsImV4cCI6MTczNTM0NDIwMH0.17_xCSbVqcGarRVtcdDiIyIc73gSA_WjltuFPUHJfR4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Mounaaaaaaaa\",\n    \"lastName\": \"kopo\",\n    \"dob\": \"2002-09-11\",\n    \"gender\": \"Female\",\n\n    \"specialization\" : \"electrician\",\n    \"rating\" : 3.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN - delete user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0xLCBuYW1lPVJPTEVfQURNSU4pIiwic3ViIjoic3ViaGFAbWFpbC5jb20iLCJpYXQiOjE3MzUzMzM0MDAsImV4cCI6MTczNTM0NDIwMH0.17_xCSbVqcGarRVtcdDiIyIc73gSA_WjltuFPUHJfR4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESIDENT - list availability",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0yLCBuYW1lPVJPTEVfUkVTSURFTlQpIiwic3ViIjoia2F2eWFAbWFpbC5jb20iLCJpYXQiOjE3MzU1MDg2NTgsImV4cCI6MTczNTUxOTQ1OH0.7s3fbhHER1Xbx86mcWmlcgeNl5lHnXhrYjsYdK8NK4c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resident/helper",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resident",
+						"helper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESIDENT - book appointment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0yLCBuYW1lPVJPTEVfUkVTSURFTlQpIiwic3ViIjoia2F2eWFAbWFpbC5jb20iLCJpYXQiOjE3MzU0OTQzODgsImV4cCI6MTczNTUwNTE4OH0.goJy5H6kkwCkHkL3ulEppUYTP_FkIENSVdBLI68oNO4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scheduledAt\": \"2025-04-18 12:30\",\n    \"helperId\": 7\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resident/5/book-appointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resident",
+						"5",
+						"book-appointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HELPER - list all appoinments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUm9sZShpZD0zLCBuYW1lPVJPTEVfSEVMUEVSKSIsInN1YiI6Im1vdW5hQG1haWwuY29tIiwiaWF0IjoxNzM1MzQwNzgyLCJleHAiOjE3MzUzNTE1ODJ9.IL8vuI9IqcW6hMeu0USZEgKu8_tTEQ49ocHIqYjMHk4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/helper/2/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"helper",
+						"2",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
